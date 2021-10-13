@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.preprocessing import normalize
 
 scales = [200, 256, 320, 400]
-path = './features'
+path = './features/'
 features_r = []
 for s in scales:
     file_r = [path + 'references_' + str(i) + '_byol_' + str(s) + '.hdf5' for i in range(20)]
