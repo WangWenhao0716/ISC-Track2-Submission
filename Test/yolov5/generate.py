@@ -14,7 +14,7 @@ for i in range(len(names)):
             class_ = detect[j][-1]
             if (class_==0):
                 score = detect[j][-2]
-                if (score>0.01):
+                if (score>0.90):
                     old_img = Image.open(path+names[i]+'.jpg')
                     w, h = old_img.size
                     max_length = max(w,h)
@@ -23,9 +23,7 @@ for i in range(len(names)):
                     new_h = int(enlarge*h)
                     old_img = old_img.resize((new_w,new_h))
                     new_img = old_img.crop(detect[j][:-2])
-                    num = 100 + j
-                    dst = '/dev/shm/query_images_exp/' + names[i] + '_' + str(num) + '.jpg'
+                    dst = '/dev/shm/query_images_detection/' + names[i] + '.jpg'
                     print(i)
                     al.append(i)
                     new_img.save(dst,quality=100)
-#from 100
