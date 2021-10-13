@@ -24,7 +24,7 @@ write_hdf5_descriptors(features_t_multi,name_t, path + 'train_byol_' + str(scale
 
 features_q = []
 for s in scales:
-    file_q = [path + 'query_' + str(i) + '_byol_' + str(s) + '_detection_50k.hdf5' for i in range(1)]
+    file_q = [path + 'query_' + str(i) + '_byol_' + str(s) + '_detection.hdf5' for i in range(1)]
     name_q, feature_q = read_descriptors(file_q)
     features_q.append(feature_q)
 
