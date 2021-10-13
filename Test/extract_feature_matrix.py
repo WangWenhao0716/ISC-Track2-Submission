@@ -2,7 +2,7 @@
 # All rights reserved.
 import warnings
 warnings.filterwarnings('ignore')
-from models_balance.gem import GeneralizedMeanPoolingP
+from models_balance_matrix.gem import GeneralizedMeanPoolingP
 import sys
 import os
 import pdb
