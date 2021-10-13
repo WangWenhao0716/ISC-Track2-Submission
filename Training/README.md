@@ -41,7 +41,7 @@ mod['state_dict'].pop('classifier_0.weight')
 mod['state_dict'].pop('classifier_1.weight')
 mod['state_dict'].pop('classifier_2.weight')
 mod['state_dict'].pop('classifier_3.weight')
-torch.save(mod['state_dict'], '/dev/shm/baseline_distill_50.pth.tar')
+torch.save(mod['state_dict'], '/dev/shm/baseline_matrix_baro_c24.pth.tar')
 ```
 
 I promise the training experiment has been reproduced by ourselves and the results are stable. If you find any problems with the reproduction of training, please feel free to contact me.
