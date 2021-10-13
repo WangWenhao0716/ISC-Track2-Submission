@@ -4,7 +4,7 @@
 
 In the training parts, we use one dataset. The dataset is selected from the provided training data. We choose 100,000 out of 1000,000 images to perform training. It should be noted that NO reference data is used.
 
-To be convenient, we supply the [**link**]() to the generated dataset as follows. You can directly download them from Google drive and unzip them. The default path is ```/dev/shm``` to store the images temporarily for training.
+To be convenient, we supply the [**link**](https://drive.google.com/file/d/1Ianqo1TS3Idx-211oWNANoZJ94WVgx6N/view?usp=sharing) to the generated dataset. You can directly download them from Google drive and unzip them. The default path is ```/dev/shm``` to store the images temporarily for training.
 
 Or you can generate the training datasets according to the codes in the ```generate``` folder by yourself. It takes about one day to generate it using one core of Intel Goldern 6240 CPU. To speed up, using multi-cores is a feasible way. We use some images from [**OpenImage**](https://opensource.google/projects/open-images-dataset) to generate overlay and underlay augmentation under CC-by 4.0 License. It should be noted that the using of OpenImage is not a must, other images show similar performance. The part of OpenImage we used can be downloaded from [**here**](https://drive.google.com/file/d/102JynPEzqiZ83zAdquFbrQah2JbXFOuu/view?usp=sharing). 
 
