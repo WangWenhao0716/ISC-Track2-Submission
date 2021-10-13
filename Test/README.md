@@ -44,7 +44,7 @@ python multi_scale.py
 python descriptor_stretching.py
 ```
 
-Finally, the features of all 1000,000 reference images are saved in ```references_byol_multi_scale.hdf5```, and the feature of all 50,000 query images are saved in ```query_byol_detection_multi_scale_ds.hdf5```. By using the following script, you will get the final submission.
+Finally, the features of all 1000,000 reference images are saved in ```features/references_byol_multi_scale.hdf5```, and the feature of all 50,000 query images are saved in ```features/query_byol_detection_multi_scale_ds.hdf5```. By using the following script, you will get the final submission.
 ```
 import h5py
 import numpy as np
