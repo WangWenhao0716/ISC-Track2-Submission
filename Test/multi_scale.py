@@ -11,7 +11,7 @@ for s in scales:
     features_r.append(feature_r)
 
 features_r_multi = normalize(sum(features_r)/len(features_r))
-write_hdf5_descriptors(features_r_multi,name_r, path + 'references_byol_' + str(scales) +'.hdf5')
+write_hdf5_descriptors(features_r_multi,name_r, path + 'references_byol_multi_scale.hdf5')
 
 features_t = []
 for s in scales:
@@ -20,7 +20,7 @@ for s in scales:
     features_t.append(feature_t)
 
 features_t_multi = normalize(sum(features_t)/len(features_t))
-write_hdf5_descriptors(features_t_multi,name_t, path + 'train_byol_' + str(scales) +'.hdf5')
+write_hdf5_descriptors(features_t_multi,name_t, path + 'train_byol_multi_scale.hdf5')
 
 features_q = []
 for s in scales:
@@ -29,5 +29,5 @@ for s in scales:
     features_q.append(feature_q)
 
 features_q_multi = normalize(sum(features_q)/len(features_q))
-write_hdf5_descriptors(features_q_multi,name_q, path + 'query_byol_detection_' + str(scales) +'.hdf5')
+write_hdf5_descriptors(features_q_multi,name_q, path + 'query_byol_multi_scale.hdf5')
 
