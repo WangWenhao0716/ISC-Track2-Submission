@@ -28,10 +28,10 @@ bash extract_reference_matrix_200.sh
 
 ### Extract features of query images
 ```
-bash extract_query_detection_matrix_400.sh
-bash extract_query_detection_matrix_320.sh
-bash extract_query_detection_matrix_256.sh
-bash extract_query_detection_matrix_200.sh
+bash extract_query_matrix_400.sh
+bash extract_query_matrix_320.sh
+bash extract_query_matrix_256.sh
+bash extract_query_matrix_200.sh
 ```
 
 ### Ensemble
