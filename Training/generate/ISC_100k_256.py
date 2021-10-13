@@ -80,7 +80,7 @@ class random_text_overlay(object):
 
     
 class random_image_overlay(object):
-    def __init__(self, path = '/gs/home/wangwh/train_0/', which = [0,10000], new_size = [1,2.5], shapx_pos=[0, 0.5], x_pos=[0, 0.5],y_pos=[0, 0.5]):
+    def __init__(self, path = '/dev/shm/train_0/', which = [0,10000], new_size = [1,2.5], shapx_pos=[0, 0.5], x_pos=[0, 0.5],y_pos=[0, 0.5]):
         self.new_size = new_size
         self.path = path
         self.which = which
@@ -102,7 +102,7 @@ class random_image_overlay(object):
     
     
 class random_image_underlay(object):
-    def __init__(self, path = '/gs/home/wangwh/train_0/', which = [0,10000], new_size = [0.04,0.1], shapx_pos=[0, 0.5], x_pos=[0, 0.5],y_pos=[0, 0.5]):
+    def __init__(self, path = '/dev/shm/train_0/', which = [0,10000], new_size = [0.04,0.1], shapx_pos=[0, 0.5], x_pos=[0, 0.5],y_pos=[0, 0.5]):
         self.new_size = new_size
         self.path = path
         self.which = which
