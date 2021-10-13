@@ -46,24 +46,6 @@ class ResNet(nn.Module):
         if depth not in ResNet.__factory:
             raise KeyError("Unsupported depth:", depth)
         resnet = ResNet.__factory[depth](pretrained=pretrained)
-        '''
-        print("Load the pretrained BYOL...")
-        import pickle as pkl
-        #ckpt = 'pretrained/unsupervised_pretrained_byol.pkl'
-        #ckpt = '/home/bfgpu/unsupervised_pretrained_byol.pkl'
-        ckpt = '/gs/home/statchao/unsupervised_pretrained_byol.pkl'
-        #ckpt = '/gs/home/wangwh/unsupervised_pretrained_m2t.pkl'
-        #ckpt = '/gs/home/wangwh/byol_tch_train_nopre.pkl'
-        #ckpt = '/gs/sharedata/statchao/unsupervised_pretrained_resnet152_m2t_c99.pkl'
-        print("loading ckpt... ",ckpt)
-        para = pkl.load(open(ckpt, 'rb'), encoding='utf-8')['model']
-        resnet.load_state_dict(para,strict = False)
-        
-        print("Load the pretrained Barlow_Twins...")
-        ckpt = '/gs/home/wangwh/resnet50_bar.pth'
-        mod = torch.load(ckpt,map_location='cpu')
-        resnet.load_state_dict(mod,strict = False)
-        '''
         resnet.layer4[0].conv2.stride = (1,1)
         resnet.layer4[0].downsample[0].stride = (1,1)
         gap = GeneralizedMeanPoolingP() #nn.AdaptiveAvgPool2d(1)
