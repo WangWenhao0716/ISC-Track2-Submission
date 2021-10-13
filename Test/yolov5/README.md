@@ -11,7 +11,7 @@ CUDA_VISIBLE_DEVICES=0 python detect.py --source /dev/shm/query_images/ --weight
 
 Generate the augmented images by
 ```
-python generate.py
+bash generate.sh
 ```
 
 
