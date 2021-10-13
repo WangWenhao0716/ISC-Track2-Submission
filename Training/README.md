@@ -8,7 +8,7 @@ To be convenient, we supply the [**link**](https://drive.google.com/file/d/1Ianq
 
 Or you can generate the training datasets according to the codes in the ```generate``` folder by yourself. It takes about one day to generate it using one core of Intel Golden 6240 CPU. To speed up, using multi-cores is a feasible way. We use some images from [**OpenImage**](https://opensource.google/projects/open-images-dataset) to generate overlay and underlay augmentation under CC-by 4.0 License. It should be noted that the using of OpenImage is not a must, other images show similar performance. The part of OpenImage we used can be downloaded from [**here**](https://drive.google.com/file/d/102JynPEzqiZ83zAdquFbrQah2JbXFOuu/view?usp=sharing). 
 
-Assuming all the datasets are stored in ```/dev/shm```. To generate the dataset used for training, you can
+Assuming all the datasets are stored in ```/dev/shm```, to generate the dataset used for training, you can
 ```
 cd generate && python isc_100k_256.py
 ```
