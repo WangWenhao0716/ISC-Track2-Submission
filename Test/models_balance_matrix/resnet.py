@@ -35,7 +35,7 @@ class ResNet(nn.Module):
         152: torchvision.models.resnet152,
     }
 
-    def __init__(self, depth, pretrained=True, cut_at_pooling=False,
+    def __init__(self, depth, pretrained=False, cut_at_pooling=False,
                  num_features=0, norm=False, dropout=0, num_classes=0,
                  dev = None):
         super(ResNet, self).__init__()
