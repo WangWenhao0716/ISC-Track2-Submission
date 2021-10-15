@@ -8,7 +8,7 @@ We first provide the trained model to facilitate reproducing. The trained model 
 We augment query datasets to deal with overlay images. The codes for augmentation are given in ```yolov5``` folder. For more details, please refer to the readme in that folder. By the way, to run theses augmentations, it is assumed that all the original query images and generated images are saved in ```/dev/shm```.
 
 ## Test
-Until now, we have one trained model, ```baseline_matrix_baro_c24.pth.tar```, and one augmented dataset saved in ```/dev/shm/query_images_detection```. We perform extracting features using 4 different sizes, i.e. 200, 256, 320, 400. Also, we use the features of training images to perform descriptor stretching. The steps to get the final 256-descriptors are as follows.
+Until now, we have one trained model saved in ```Test/baseline_matrix_baro_c24.pth.tar```, and one augmented dataset saved in ```/dev/shm/query_images_detection```. We perform extracting features using 4 different sizes, i.e. 200, 256, 320, 400. Also, we use the features of training images to perform descriptor stretching. The steps to get the final 256-descriptors are as follows.
 
 ### Extract features of training images
 ```
