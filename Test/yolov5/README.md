@@ -6,7 +6,7 @@ Download the trained model from [**here**](https://drive.google.com/file/d/14J52
 
 Perform detection by (The images are saved in /dev/shm)
 ```
-CUDA_VISIBLE_DEVICES=0 python detect.py --source /dev/shm/query_images/ --weights best.pt --conf 0.1 
+CUDA_VISIBLE_DEVICES=0 python detect.py --source /dev/shm/query_images/ --weights best_t2.pt --conf 0.1 
 ```
 
 Generate the augmented images by
