@@ -56,7 +56,7 @@ name_q, M_query = read_descriptors(['features/query_byol_detection_multi_scale_d
 qry_ids = ['Q' + str(x).zfill(5) for x in range(50_000)]
 ref_ids = ['R' + str(x).zfill(6) for x in range(1_000_000)]
 
-out = './submit_track2_visionface.h5'
+out = './submit_track2_visionforce.h5'
 with h5py.File(out, "w") as f:
     f.create_dataset("query", data=M_query)
     f.create_dataset("reference", data=M_ref)
