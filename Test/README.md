@@ -68,6 +68,8 @@ with h5py.File(out, "w") as f:
 
 Congratulations!
 
+# One more thing
+Because we have three times to submit the results, you can try three different parameters in ```descriptor_stretching.sh```. The ```--factor``` parameter will be ```-2.0```, ```-2.5```, ```-3.0```. 
 
 
 
