@@ -27,7 +27,7 @@ To begin with, you should install the following packages with the specified vers
 Note: Some unimportant packages may be missing, please install them using pip directly when an error occurs.
 
 ## Pre-trained models
-The pre-trained models we used is directly downloaded from [**here**](https://dl.fbaipublicfiles.com/barlowtwins/ep1000_bs2048_lrw0.2_lrb0.0048_lambd0.0051/resnet50.pth). It is supplied by Facebook Research, and the project is [**Barlow Twins**](https://github.com/facebookresearch/barlowtwins).
+The pre-trained models we used is directly downloaded from [**here**](https://dl.fbaipublicfiles.com/barlowtwins/ep1000_bs2048_lrw0.2_lrb0.0048_lambd0.0051/resnet50.pth). It is supplied by Facebook Research, and the project is [**Barlow Twins**](https://github.com/facebookresearch/barlowtwins). You should rename it to ```resnet50_bar.pth```.
 
 ## Training
 For training, we generate one dataset. The training process takes less than one day on 4 V100 GPUs. The whole training codes, including how to generate training dataset and the link to the generated dataset, are given in the ```Training``` folder. For more details, please refer to the readme file in that folder.
