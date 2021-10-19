@@ -53,7 +53,7 @@ from isc.io import read_descriptors, write_hdf5_descriptors
 name_r, M_ref = read_descriptors(['features/references_byol_multi_scale.hdf5'])
 name_q, M_query = read_descriptors(['features/query_byol_detection_multi_scale_ds.hdf5'])
 
-qry_ids = ['Q' + str(x).zfill(5) for x in range(50_000)]
+qry_ids = ['Q' + str(x).zfill(5) for x in range(50_000, 100_000)]
 ref_ids = ['R' + str(x).zfill(6) for x in range(1_000_000)]
 
 out = './submit_track2_visionforce.h5'
