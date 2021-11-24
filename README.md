@@ -1,8 +1,10 @@
 # ISC-Track2-Submission
 The codes and related files to reproduce the results for Image Similarity Challenge Track 2.
 
+2021.11.24 Updates: Fix some bugs without changing performance.
+
 ## Required dependencies
-To begin with, you should install the following packages with the specified versions in Python, Anaconda. Other versions may work but please do NOT try. For instance, cuda 11.0 has some bugs which bring very bad results. The hardware chosen is Nvidia Tesla V100 and Intel CPU. Other hardware, such as A100, may work but please do NOT try. The stability is not guaranteed, for instance, the Ampere architecture is not suitable and some instability is observed. Please do NOT use AMD CPU, such as EPYC, we observe some instability on DGX server.
+To begin with, you should install the following packages with the specified versions in Python, Anaconda. Please do not use cuda 11.0, which has some bugs. The hardware chosen is Nvidia Tesla V100 and Intel CPU. We also reproduce the experiments using DGX A100 with AMD CPU, with pytorch 1.9.1 and cuda 11.1.
 
 * python 3.7.10
 * pytorch 1.7.1 with cuda 10.1
