@@ -1,6 +1,7 @@
-# ISC-Track2-Submission
+# ISC-Track2-Submission (Rank 3)
 The codes and related files to reproduce the results for Image Similarity Challenge Track 2.
 
+2021.11.25 Updates: This solution is verified! If you find this code useful for your research, please cite our paper.
 2021.11.24 Updates: Fix some bugs without changing performance.
 
 ## Required dependencies
@@ -37,4 +38,12 @@ For training, we generate one dataset. The training process takes less than one 
 ## Test
 To test the performance of the trained model, we perform multi-scale testing and ensemble all the features to get the final representation. We give all the information to generate our final results in the ```Test``` folder. Please reproduce the results according to the readme file in that folder.
 
-
+## Citation
+```
+@article{wang2021bag,
+  title={Bag of Tricks and A Strong baseline for Image Copy Detection},
+  author={Wang, Wenhao and Zhang, Weipu and Sun, Yifan and Yang, Yi},
+  journal={arXiv preprint arXiv:2111.08004},
+  year={2021}
+}
+```
