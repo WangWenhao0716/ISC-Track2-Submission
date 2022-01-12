@@ -243,7 +243,7 @@ for i in range(len(names)):
         for j in range(1,20):
             image_q = transform_q(image)
             name = str(i//10)+'_'+ str(j) +'.jpg'
-            image_q.save(paht_new+name, quality=100)
+            image_q.save(path_new+name, quality=100)
 
 
 
